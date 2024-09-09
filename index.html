@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/ico.ico"
+
+</head>
+<body>
+    <div class="container">
+        <div class="background-image"></div>
+        <div class="text-content">
+            <h1>Inglés para todos</h1>
+        </div>
+    </div> 
+    <table>
+        <tr>
+            <td><button onclick="mostrarSeccion('seccion1')">MISION</button></td>
+            <td><button onclick="mostrarSeccion('seccion2')">VISION</button></td>
+            <td><button onclick="mostrarSeccion('seccion3')">PUBLICO OBJETIVO</button></td>
+            <td><button onclick="mostrarSeccion('seccion4')">IMPACTO ESPERADO</button></td>
+        </tr>
+    </table>
+    <div id="seccion1" class="mini-seccion">
+        <button class="close-btn" onclick="cerrarSeccion('seccion1')">x</button>
+        <p>Ofrecer educación bilingüe de calidad a niños y niñas de nivel primaria que no tienen acceso a ella, a través de una plataforma en línea de bajo costo.</p>
+    </div>
+
+    <div id="seccion2" class="mini-seccion">
+        <button class="close-btn" onclick="cerrarSeccion('seccion2')">x</button>
+        <p>Contribuir a que la educación pública reconozca el inglés como una materia evaluable,<br>
+           proporcionando a niños de escasos recursos acceso a programas bilingües de alta calidad.</p>
+    </div>
+
+    <div id="seccion3" class="mini-seccion">
+        <button class="close-btn" onclick="cerrarSeccion('seccion3')">x</button>
+        <p>Niños y niñas de nivel primaria en México que provienen de familias con recursos limitados. El proyecto se centra en proporcionarles<br>
+           acceso a programas bilingües de alta calidad a través de una plataforma en línea.</p>
+    </div>
+
+    <div id="seccion4" class="mini-seccion">
+        <button class="close-btn" onclick="cerrarSeccion('seccion4')">x</button>
+        <p>Facilitar que más niños y niñas en México aprendan inglés desde una edad temprana, contribuyendo a su desarrollo académico y profesional futuro.<br>
+            Esto incluirá una mejora en sus habilidades lingüísticas, mayor acceso a oportunidades educativas y laborales,<br>
+             y una mejor preparación para enfrentar un entorno globalizado.</p>
+    </div>
+
+    <script>
+        function mostrarSeccion(seccionId) {
+            var secciones = document.getElementsByClassName("mini-seccion");
+            for (var i = 0; i < secciones.length; i++) {
+                secciones[i].style.display = "none";
+            }
+            document.getElementById(seccionId).style.display = "block";
+        }
+        function cerrarSeccion(seccionId) {
+            document.getElementById(seccionId).style.display = "none";
+        }
+    </script>
+    <br>
+    <h2>Nuestro proposito</h2>
+    <P>
+        Nuestro propósito es proporcionar educación bilingüe de alta calidad a niños y niñas de primaria en México que provienen de familias con recursos limitados.
+        Mediante una plataforma en línea accesible y eficaz, buscamos facilitar el aprendizaje del inglés desde una edad temprana. 
+        Queremos impulsar su desarrollo académico y profesional futuro, integrando programas bilingües en su educación para mejorar sus habilidades lingüísticas y abrirles nuevas oportunidades en un entorno globalizado.         
+    </P>
+    
+    <ul>
+        <li>
+            <span>Síguenos en nuestras redes sociales <br>
+                Facebook: Inglés para todos Oficial <br>
+                Instagram: @Inglés_para_todos_Oficial <br>    
+            </span>
+            <div class="image-container">
+                <img src="img/icons8-facebook-48.png" alt="Facebook">
+                <img src="img/icons8-instagram-48.png" alt="Instagram">
+            </div>
+        </li>
+        <li>
+            <span>Cerca de tu comunidad <br></span>
+            <div class="image-container">
+                <img src="img/icons8-mapa-100.png" alt="Mapa">
+            </div>
+        </li>
+        <li>
+            <span>Aprende con nosotros desde nivel básico</span>
+            <div class="image-container">
+                <img src="img/icons8-abc-40.png" alt="ABC">
+            </div>
+        </li>
+        <li>
+            <span>Clases divertidas e interactivas</span>
+            <div class="image-container">
+                <img src="img/icons8-tetris.gif" alt="Tetris">
+            </div>
+        </li>
+        <li>
+            <span>Únete a classroom</span>
+            <a href="https://classroom.google.com/c/NzExNjQ0MTMzMTg2?cjc=b7473f2" target="_blank">
+                <div class="image-container">
+                    <img src="img/aula.png" alt="Classroom">
+                </div>
+            </a>
+        </li>
+        <li>
+            <span>No importa tu nivel, realizamos examen de colocación</span>
+            <div class="image-container">
+                <img src="img/icons8-examen.gif" alt="Examen">
+            </div>
+        </li>
+    </ul>
+</div>
+</body>
+</html>
